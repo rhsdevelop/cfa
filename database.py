@@ -3,6 +3,7 @@
 Programa teste para implantação de banco de dados para o aplicativo do salão.
 '''
 
+import datetime
 import sqlite3
 
 def create_tables():
@@ -238,12 +239,12 @@ def inserir_dados():
         c.execute('INSERT INTO Categorias VALUES ' + row)
 
     # Inserir parceiro genérico
-    row = ('(1, "2017-07-19", "MOVIMENTOS GERAIS", "MOVIMENTOS SEM PARCEIRO CADASTRADO", ' +
+    row = ('(1, "' + str(datetime.datetime.now().date()) + '", "MOVIMENTOS GERAIS", "MOVIMENTOS SEM PARCEIRO CADASTRADO", ' +
            '0, "99.999.999/9999-99", "Sem localização", "", "Sem controle", 0)')
     c.execute('INSERT INTO Parceiros VALUES ' + row)
 
     # Inserir conta de movimentação Dinheiro em mãos
-    row = ('(1, "2017-07-01", "DINHEIRO EM MÃOS", 0, "", 0, 0, "", "", 0)')
+    row = ('(1, "' + str(datetime.datetime.now().date()) + '", "DINHEIRO EM MÃOS", 0, "", 0, 0, "", "", 0)')
     c.execute('INSERT INTO Bancos VALUES ' + row)
     
     conn.commit()
@@ -265,7 +266,7 @@ def atualiza_2208():
 conn = sqlite3.connect('finance.db')
 c = conn.cursor()
 create_tables()
-# inserir_dados()
+inserir_dados()
 # atualiza_2208()
 c.close()
 conn.close()

@@ -1,5 +1,4 @@
-# cfa
-CFA - CONSULTOR FINANCEIRO E ADMINISTRATIVO
+# CFA - CONSULTOR FINANCEIRO E ADMINISTRATIVO
 ERP completo para empresas de pequeno porte ou profissionais autônomos.
 
 RHS Desenvolvimentos
