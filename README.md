@@ -54,5 +54,6 @@ PyInstaller
 - instalar pyinstaller. Comando: pip install pyinstaller
 - Versão Linux/Mac: Comando: pyinstaller -i images/cfp.ico finance.py -F --hidden-import='PIL._tkinter_finder'
 - Versão Windows: Comando: pyinstaller -i images/cfp.ico finance.py -F
-- copiar pasta images e arquivo finance.db para pasta que contém o executável gerado.
+- criar pasta "csv" na pasta que contém o executável gerado (arquivo finance).
+- copiar pasta "images" e arquivos "finance.db", "client_secrets.json" e "settings.yaml" para pasta que contém o executável gerado (arquivo finance).
 - executar. Comando: ./finance
