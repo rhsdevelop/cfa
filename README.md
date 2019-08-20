@@ -46,3 +46,13 @@ Arquivo de dados
 Uso em múltiplas máquinas
 Se o programa estiver integrado ao Google Drive, copiar a pasta ./settings e o arquivo finance.db para o destino na máquina que recebe a réplica do banco.
 Ao exportar os dados para a nuvem, todos os computadores utilizados estarão sincronizados na mesma conta Google, se ao iniciarem for aceita a integração automática com os dados no Google Drive.
+
+
+EXECUTÁVEIS PARA SISTEMAS OPERACIONAIS
+
+PyInstaller
+- instalar pyinstaller. Comando: pip install pyinstaller
+- Versão Linux/Mac: Comando: pyinstaller -i images/cfp.ico finance.py -F --hidden-import='PIL._tkinter_finder'
+- Versão Windows: Comando: pyinstaller -i images/cfp.ico finance.py -F
+- copiar pasta images e arquivo finance.db para pasta que contém o executável gerado.
+- executar. Comando: ./finance
