@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Pastas locais para integração Google Drive.
+csv/
+settings/
