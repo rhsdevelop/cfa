@@ -106,3 +106,4 @@ venv.bak/
 # Pastas locais para integração Google Drive.
 csv/
 settings/
+*.db
